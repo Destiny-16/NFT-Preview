@@ -28,6 +28,16 @@ body{
   justify-content: center;
 }
 
+.box{
+  border-radius: 10px;
+  height: 300px;
+  margin-top: -245px;
+  width: 300px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  position: absolute;
+}
+
 .card{
   align-items: center;
   background-color: hsl(216, 50%, 16%);
@@ -39,7 +49,6 @@ body{
   margin-bottom: 300px;
   margin-top: 300px;
   padding-bottom: 100px;
-  padding-top: 100px;
   width: 350px;
 
 }
@@ -60,11 +69,23 @@ body{
   color: hsl(178, 100%, 50%);
 }
 
-.ethAndImage, .daysAndImage, .credit{
+.description, .creator{
+  font-family: Outfit;
+  font-weight:300;
+}
+
+
+.ethAndImage, .daysAndImage, .credit, .creditAndName{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
+.eth, .days{
+  font-family: Outfit;
+  font-weight:400;
+}
+
 
 .eth-icon{
   height: 20px;
@@ -74,10 +95,22 @@ body{
 
 .equilibrium{
   border-radius: 10px;
-  height: 300px;
   margin-top: 20px;
+  height: 300px;
   width: 300px;
 }
+
+.line{
+  font-size: 5px;
+}
+
+.name{
+  color: hsl(0, 0%, 100%);
+  padding-left: 5px;
+  font-family: Outfit;
+  font-weight: 300;
+}
+
 
 .soft-blue{
   color: hsl(215, 51%, 70%);
@@ -89,6 +122,33 @@ body{
   justify-content: space-between;
 }
 
+.title{
+  font-family: Outfit;
+  font-weight:600;
+}
+
+.view{
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 0%;
+  opacity: 0;
+}
+
 .white{
   color: hsl(0, 0%, 100%);
+}
+
+/* EFFECTS */
+
+.box:hover{
+  opacity: 0.5;
+
+}
+
+.title:hover, .name:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.view:hover{
+  opacity: 1;
 }
