@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -17,18 +20,23 @@
 
 <body>
 
+
   <div class="card">
 
+    <div class="box"></div>
     <img class="equilibrium" src="images/image-equilibrium.jpg" alt="Equilibrium">
 
+    <img class="view" src="images/icon-view.svg" alt="view">
+
     <div class="card-info">
+
       <h2 class="white title">Equilibrium #3429</h2>
       <p class="soft-blue description">Our Equilibrium collection promotes balance and calm.</p>
 
       <div class="stats">
 
         <div class="ethAndImage">
-          <img class="eth-icon"src="images/icon-ethereum.svg" alt="ethereum">
+          <img class="eth-icon" src="images/icon-ethereum.svg" alt="ethereum">
           <h4 class="cyan eth">0.041 ETH</h4>
         </div>
 
@@ -39,11 +47,14 @@
 
       </div>
 
-      <!-- <p>_____________________________________________________________</p> -->
+      <p class="soft-blue line">_______________________________________________________________________________________________________________________</p>
 
       <div class="credit">
         <img class="avatar" src="images/image-avatar.png" alt="avatar">
-        <p class="soft-blue creator">Creation of <span style="color:hsl(0, 0%, 100%)"> Jules Wyvern</span></p>
+        <div class="creditAndName">
+          <p class="soft-blue creator">Creation of </p>
+          <p class="name"> Jules Wyvern</p>
+        </div>
       </div>
 
 
